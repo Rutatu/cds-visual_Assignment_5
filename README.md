@@ -38,3 +38,7 @@ Before executing the code make sure that the images are located in the following
 
 
 I hope it worked!
+
+
+__References__
+https://www.analyticsvidhya.com/blog/2020/10/create-image-classification-model-python-keras/
