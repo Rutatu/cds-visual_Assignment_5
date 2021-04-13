@@ -23,8 +23,9 @@ This assignment is designed to test that you have an understanding of:
 
 __Instructions to run the code__
 
-Before executing the code make sure that the images are located in the following path: 'data/Impressionist_Classifier_data'. 
-'Impressionist_Classifier_data' folder should contain two folders: training and validation, which contain ten folders labeled by an artist name.
+Before executing the code make sure that the images are located in the following path: ***'data/Impressionist_Classifier_data'***
+
+***'Impressionist_Classifier_data'*** folder should contain two folders: training and validation, which contain ten folders labeled by an artist name.
 
 - Open terminal on worker02
 - Navigate to the environment where you want to clone this repository, e.g. type: cd cds-visual
