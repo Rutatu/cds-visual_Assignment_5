@@ -14,7 +14,7 @@ Data used for this assignment can be found here: https://www.kaggle.com/delayedk
 
 __Purpose__
 
-This assignment is designed to test that you have a understanding of:
+This assignment is designed to test that you have an understanding of:
 
 - how to build and train deep convolutional neural networks;
 - how to preprocess and prepare image data for use in these models;
@@ -25,7 +25,7 @@ __Instructions to run the code__
 
 - Open terminal on worker02
 - Navigate to the environment where you want to clone this repository, e.g. type: cd cds-visual
-- Clone the repository, type: git clone 
+- Clone the repository, type: git clone https://github.com/Rutatu/cds-visual_Assignment_5.git 
 - Navigate to the newly cloned repo
 - Script can be executed either from the bash file or .py file depending on whether you need/want to create a virtual environment:
     - To run the code from bash file type: bash cnn_venv.sh. It will install requirements.txt file and execute the code
