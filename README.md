@@ -41,4 +41,5 @@ I hope it worked!
 
 
 __References__
+
 https://www.analyticsvidhya.com/blog/2020/10/create-image-classification-model-python-keras/
