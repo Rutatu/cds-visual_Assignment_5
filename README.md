@@ -36,12 +36,12 @@ __Steps:__
 - Open terminal on worker02
 - Navigate to the environment where you want to clone this repository
 - Clone the repository:
-``` Ruby
-git clone https://github.com/Rutatu/cds-visual_Assignment_5.git 
+```
+$ git clone https://github.com/Rutatu/cds-visual_Assignment_5.git 
 ``` 
 - Navigate to the newly cloned repo
 - Script can be executed either from the bash file or .py file depending on whether you need/want to create a virtual environment:
-``` Ruby
+``` 
 # Run the code from bash file (it will install requirements.txt file and execute the code)
 bash cnn_venv.sh
 
