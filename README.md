@@ -13,10 +13,7 @@ This script builds a deep learning model using convolutional neural networks whi
 
 Data used for this assignment can be found here: https://www.kaggle.com/delayedkarma/impressionist-classifier-data
 
-``` 
-class MyClass
-end
-```
+
 
 
 __Purpose__
@@ -28,20 +25,36 @@ This assignment is designed to test that you have an understanding of:
 - how to work with complex, cultural image data, rather than toy datasets
 
 
-__Instructions to run the code__
+## Intructions to run the code
 
 Before executing the code make sure that the images are located in the following path: ***'data/Impressionist_Classifier_data'***
 
 ***'Impressionist_Classifier_data'*** folder should contain two folders: training and validation, which contain ten folders labeled by an artist name.
 
+__Steps:__
+
 - Open terminal on worker02
-- Navigate to the environment where you want to clone this repository, e.g. type: cd cds-visual
-- Clone the repository, type: git clone https://github.com/Rutatu/cds-visual_Assignment_5.git 
+- Navigate to the environment where you want to clone this repository
+- Clone the repository:
+``` Ruby
+git clone https://github.com/Rutatu/cds-visual_Assignment_5.git 
+``` 
 - Navigate to the newly cloned repo
 - Script can be executed either from the bash file or .py file depending on whether you need/want to create a virtual environment:
-    - To run the code from bash file type: bash cnn_venv.sh. It will install requirements.txt file and execute the code
-    - To run the code from .py file type: python cnn-artists.py.
-- To remove the newly created virtual environment (if you did so) type: bash kill_cnn.sh
+``` Ruby
+# Run the code from bash file (it will install requirements.txt file and execute the code)
+bash cnn_venv.sh
+
+# Run the code from .py file 
+python cnn-artists.py
+``` 
+
+- Remove the newly created virtual environment (if you did so):
+``` Ruby
+bash kill_cnn.sh
+``` 
+
+
 
 
 I hope it worked!
