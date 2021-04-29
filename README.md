@@ -13,7 +13,7 @@ This script builds a deep learning model using convolutional neural networks whi
 
 Data used for this assignment can be found here: https://www.kaggle.com/delayedkarma/impressionist-classifier-data
 
-``` Ruby
+``` 
 class MyClass
 end
 ```
