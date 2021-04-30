@@ -29,27 +29,40 @@ This assignment is designed to test that you have an understanding of:
 
 Before executing the code make sure that the images are located in the following path: ***'data/Impressionist_Classifier_data'***
 
-***'Impressionist_Classifier_data'*** folder should contain two folders: training and validation, which contain ten folders labeled by an artist name.
+***'Impressionist_Classifier_data'*** folder should contain two folders: training and validation, each of which contains ten folders labeled by an artist name.
+The code should work on any other similar image data structured this way, however the model parameters might require readjusting based on different data.
+
 
 __Steps:__
 
-- Open terminal on worker02
+- Open terminal on worker02 or locally
 - Navigate to the environment where you want to clone this repository
 - Clone the repository:
-```
+```Ruby
 $ git clone https://github.com/Rutatu/cds-visual_Assignment_5.git 
 ``` 
-- Navigate to the newly cloned repo
-- Script can be executed either from the bash file or .py file depending on whether you need/want to create a virtual environment:
-``` 
-# Run the code from bash file (it will install requirements.txt file and execute the code)
-bash cnn_venv.sh
 
-# Run the code from .py file 
-python cnn-artists.py
-``` 
+- Navigate to the newly cloned repo:
+```Ruby
+$ cd cds-visual_Assignment_5
+ ```
 
-- Remove the newly created virtual environment (if you did so):
+- Create virtual environment with its dependencies and activate it:
+```Ruby
+$ bash cnn_venv.sh
+$ source ./cnn_venv/bin/activate
+ ```
+
+- Navigate to the directory of the script:
+```Ruby
+$ cd src
+ ```
+- Run the code:
+```Ruby
+$ python cnn-artists.py -trd data/Impressionist_Classifier_data/training -vald data/Impressionist_Classifier_data/validation
+ ```
+
+- Remove the newly created virtual environment:
 ``` Ruby
 bash kill_cnn.sh
 ``` 
