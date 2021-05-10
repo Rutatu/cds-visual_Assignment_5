@@ -27,9 +27,20 @@ Paintings of 10 Impressionist painters, namely: Camille Pisarro, Childe Hassam, 
 
 Data used for this assignment can be found here: https://www.kaggle.com/delayedkarma/impressionist-classifier-data
 
+__Data structure__
 
-### Data preprocessing and methods
+Before executing the code make sure that the images are located in the following path: ***'data/Impressionist_Classifier_data'***
 
+***'Impressionist_Classifier_data'*** folder should contain two folders: training and validation, each of which contains ten folders labeled by an artist name.
+The code should work on any other similar image data structured this way, however the model parameters and preprocessing might require readjustments based on different data.
+
+
+__Data preprocessing and methods__
+
+The problem of the task relates to classifying art paintings. To address this problem, I have used LeNet architecture to build a CNN model using a neural network framework TensorFlow 2.4. LeNet architecture used in this assignment consists of 6 layers:  two Convolutional Layers (CONV),  two Max Pooling layers (MAXPOOL), two Fully Connected Layers (FC). It uses activation function ReLU except for the output or classification layer (FC 2) with 10 possible classes, which uses softmax activation function.
+
+LeNet architecture:
+INPUT => CONV 1=> ReLU => MAXPOOL 1=> CONV 2=> ReLU => MAXPOOL 2 => FC 1=> ReLU => FC 2
 
 
 
@@ -38,16 +49,7 @@ Data used for this assignment can be found here: https://www.kaggle.com/delayedk
 
 The code was tested on HP computer with Windows 10 operating system. It was executed on Jupyter worker02.
 
-
-___Data structure___
-
-Before executing the code make sure that the images are located in the following path: ***'data/Impressionist_Classifier_data'***
-
-***'Impressionist_Classifier_data'*** folder should contain two folders: training and validation, each of which contains ten folders labeled by an artist name.
-The code should work on any other similar image data structured this way, however the model parameters and preprocessing might require readjustments based on different data.
-
-
-___Code parameters___
+__Code parameters__
 
 
 | Parameter | Description |
