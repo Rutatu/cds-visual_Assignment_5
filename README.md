@@ -14,7 +14,7 @@ This script builds a deep learning model using convolutional neural networks whi
 
 ## Repository contents
 
-| Command | Description |
+| File | Description |
 | --- | --- |
 | git status | List all new or modified files |
 | git diff | Show file differences that haven't been staged |
@@ -36,6 +36,8 @@ Data used for this assignment can be found here: https://www.kaggle.com/delayedk
 
 ## Intructions to run the code
 
+The code was tested on HP computer with Windows 10 operating system. It was executed on Jupyter worker02.
+
 
 ___Data structure___
 
@@ -45,42 +47,49 @@ Before executing the code make sure that the images are located in the following
 The code should work on any other similar image data structured this way, however the model parameters and preprocessing might require readjustments based on different data.
 
 
+___Code parameters___
+
+
+| Parameter | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
+
 
 ___Steps:___
 
-- Open terminal on worker02 or locally
-- Navigate to the environment where you want to clone this repository
-- Clone the repository:
-```Ruby
+Set-up:
+```
+#1 Open terminal on worker02 or locally
+#2 Navigate to the environment where you want to clone this repository
+#3 Clone the repository
 $ git clone https://github.com/Rutatu/cds-visual_Assignment_5.git 
-``` 
 
-- Navigate to the newly cloned repo:
-```Ruby
+#4 Navigate to the newly cloned repo
 $ cd cds-visual_Assignment_5
- ```
 
-- Create virtual environment with its dependencies and activate it:
-```Ruby
+#5 Create virtual environment with its dependencies and activate it
 $ bash cnn_venv.sh
 $ source ./cnn_venv/bin/activate
- ```
 
-- Navigate to the directory of the script:
-```Ruby
-$ cd src
- ```
-- Run the code:
-```Ruby
-$ python cnn-artists.py -trd data/Impressionist_Classifier_data/training -vald data/Impressionist_Classifier_data/validation
- ```
-
-- To remove the newly created virtual environment:
-``` Ruby
-bash kill_cnn.sh
 ``` 
 
+Run the code:
 
+```
+#6 Navigate to the directory of the script
+$ cd src
+
+#7 Run the code with default parameters
+$ python cnn-artists.py -trd data/Impressionist_Classifier_data/training -vald data/Impressionist_Classifier_data/validation
+
+#8 Run the code with self-chosen parameters
+$ python cnn-artists.py -trd data/Impressionist_Classifier_data/training -vald data/Impressionist_Classifier_data/validation -lr 0.002 -opt Adam -ep 100
+
+#9 To remove the newly created virtual environment
+$ bash kill_cnn.sh
+
+ ```
 
 
 I hope it worked!
