@@ -7,11 +7,11 @@
 
 # CNNs on cultural image data: Multi-class classification of impressionist painters
 
-## About the script
+# About the script
 
 This script builds a deep learning model using convolutional neural networks which classify Impressionism paintings by their respective artists. It uses LeNet architecture for CNN. Why might we want to do this? Well, consider the scenario where we have found a new, never-before-seen painting which is claimed to be the artist Renoir. An accurate predictive model could be useful here for art historians and archivists!
 
-# Methods
+## Methods
 The problem of the task relates to classifying art paintings. To address this problem, I have used LeNet architecture to build a CNN model using a neural network framework TensorFlow 2.4. LeNet architecture used in this assignment consists of 6 layers: two Convolutional Layers (CONV), two Max Pooling layers (MAXPOOL), two Fully Connected Layers (FC). It uses activation function ReLU except for the output or classification layer (FC 2) with 10 possible classes, which uses softmax activation function.
 
 LeNet architecture: INPUT => CONV 1=> ReLU => MAXPOOL 1=> CONV 2=> ReLU => MAXPOOL 2 => FC 1=> ReLU => FC 2
