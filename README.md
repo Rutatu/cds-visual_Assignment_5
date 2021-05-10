@@ -16,7 +16,7 @@ The problem of the task relates to classifying art paintings. To address this pr
 
 LeNet architecture: INPUT => CONV 1=> ReLU => MAXPOOL 1=> CONV 2=> ReLU => MAXPOOL 2 => FC 1=> ReLU => FC 2
 
-Depiction of the full model architecture can be found in folder called ***'out'***.
+Depiction of the full model´s architecture can be found in folder called ***'output'***.
 
  
 
@@ -25,8 +25,16 @@ Depiction of the full model architecture can be found in folder called ***'out'*
 
 | File | Description |
 | --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| output | Folder containing files produced by the script |
+| output/Impressionist_classifier_report.csv | Classification metrics of the model |
+| output/LeNet_CNN_model´s_performance.png | Model´s performance graph |
+| output/Model´s_architecture.png | Depiction of CNN model´s architecture used |
+| src | Folder containing the script |
+| src/cnn_artists.py | The script |
+| README.md | Description of the assignment and the instructions |
+| cnn_venv.sh | bash file for creating a virtual environmment  |
+| kill_cnn.sh | bash file for killing a virtual environment |
+| requirements.txt | list of python packages required to run the script |
 
 
 
@@ -46,7 +54,7 @@ The code should work on any other similar image data structured this way, howeve
 
 __Data preprocessing__
 
-Image preprocessing involved reshaping all images to a preferred size of 256x256, converting images from BGR to RGB format, because openCV opened it in BGR (blue, green, red) format, extracting the labels of the images from the subfolders directory name.
+Image preprocessing involved reshaping all images to a preferred size of 256x256, converting images from BGR to RGB format, because openCV opened it in BGR (blue, green, red) format, extracting the labels of the images from the subfolders directory names.
 
 
 
