@@ -18,18 +18,16 @@ Paintings of 10 Impressionist painters, namely: Camille Pisarro, Childe Hassam, 
 Data used for this assignment can be found here: https://www.kaggle.com/delayedkarma/impressionist-classifier-data
 
 
+### Data preprocessing and methods
 
 
-__Purpose__
-
-This assignment is designed to test that you have an understanding of:
-
-- how to build and train deep convolutional neural networks;
-- how to preprocess and prepare image data for use in these models;
-- how to work with complex, cultural image data, rather than toy datasets
 
 
-## Intructions to run the code
+
+### Intructions to run the code
+
+
+___Data structure___
 
 Before executing the code make sure that the images are located in the following path: ***'data/Impressionist_Classifier_data'***
 
@@ -37,7 +35,8 @@ Before executing the code make sure that the images are located in the following
 The code should work on any other similar image data structured this way, however the model parameters might require readjusting based on different data.
 
 
-__Steps:__
+
+___Steps:___
 
 - Open terminal on worker02 or locally
 - Navigate to the environment where you want to clone this repository
@@ -66,7 +65,7 @@ $ cd src
 $ python cnn-artists.py -trd data/Impressionist_Classifier_data/training -vald data/Impressionist_Classifier_data/validation
  ```
 
-- Remove the newly created virtual environment:
+- To remove the newly created virtual environment:
 ``` Ruby
 bash kill_cnn.sh
 ``` 
