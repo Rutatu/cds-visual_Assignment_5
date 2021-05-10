@@ -32,7 +32,7 @@ ___Data structure___
 Before executing the code make sure that the images are located in the following path: ***'data/Impressionist_Classifier_data'***
 
 ***'Impressionist_Classifier_data'*** folder should contain two folders: training and validation, each of which contains ten folders labeled by an artist name.
-The code should work on any other similar image data structured this way, however the model parameters might require readjusting based on different data.
+The code should work on any other similar image data structured this way, however the model parameters and preprocessing might require readjustments based on different data.
 
 
 
