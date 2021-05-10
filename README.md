@@ -16,6 +16,8 @@ The problem of the task relates to classifying art paintings. To address this pr
 
 LeNet architecture: INPUT => CONV 1=> ReLU => MAXPOOL 1=> CONV 2=> ReLU => MAXPOOL 2 => FC 1=> ReLU => FC 2
 
+Depiction of the full model architecture can be found in folder called ***'out'***.
+
  
 
 
@@ -44,20 +46,24 @@ The code should work on any other similar image data structured this way, howeve
 
 __Data preprocessing__
 
+Image preprocessing involved reshaping all images to a preferred size of 256x256, converting images from BGR to RGB format, because openCV opened it in BGR (blue, green, red) format, extracting the labels of the images from the subfolders directory name.
 
 
 
 ## Intructions to run the code
 
-The code was tested on HP computer with Windows 10 operating system. It was executed on Jupyter worker02.
+The code was tested on an HP computer with Windows 10 operating system. It was executed on Jupyter worker02.
 
 __Code parameters__
 
 
 | Parameter | Description |
 | --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| train_data | Directory of training data |
+| val_data | Directory of validation data |
+| learning_rate | Learning rate. Default = 0.01 |
+| optimizer | Optimizer. Default = SGD |
+| epochs | Number of epochs. Default = 50 |
 
 
 __Steps__
