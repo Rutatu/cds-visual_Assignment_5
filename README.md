@@ -7,9 +7,13 @@
 
 # CNNs on cultural image data: Multi-class classification of impressionist painters
 
-## About the script
+### About the script
 
 This script builds a deep learning model using convolutional neural networks which classify Impressionism paintings by their respective artists. It uses LeNet architecture for CNN. Why might we want to do this? Well, consider the scenario where we have found a new, never-before-seen painting which is claimed to be the artist Renoir. An accurate predictive model could be useful here for art historians and archivists!
+
+### Data
+
+Paintings of 10 Impressionist painters, namely: Camille Pisarro, Childe Hassam, Claude Monet, Edgar Degas, Henri Matisse, John Singer-Sargent, Paul Cezanne, Paul Gauguin, Pierre-Auguste Renoir, Vincent van Gogh. It consists of 400 training images and 100 validation images respectively for each of the 10 artists.
 
 Data used for this assignment can be found here: https://www.kaggle.com/delayedkarma/impressionist-classifier-data
 
