@@ -12,7 +12,8 @@
 This script builds a deep learning model using convolutional neural networks which classify Impressionism paintings by their respective artists. It uses LeNet architecture for CNN. Why might we want to do this? Well, consider the scenario where we have found a new, never-before-seen painting which is claimed to be the artist Renoir. An accurate predictive model could be useful here for art historians and archivists!
 
 ## Methods
-The problem of the task relates to classifying art paintings. To address this problem, I have used LeNet architecture to build a CNN model using a neural network framework TensorFlow 2.4. LeNet architecture used in this assignment consists of 6 layers: two Convolutional Layers (CONV), two Max Pooling layers (MAXPOOL), two Fully Connected Layers (FC). It uses activation function ReLU except for the output or classification layer (FC 2) with 10 possible classes, which uses softmax activation function.
+The problem of the task relates to classifying art paintings. To address this problem, I have used LeNet architecture to build a CNN model using a neural network framework TensorFlow 2.4. LeNet architecture used in this assignment consists of 6 layers: two Convolutional Layers (CONV), two Max Pooling layers (MAXPOOL), two Fully Connected Layers (FC). It uses activation function ReLU except for the output or classification layer (FC 2) with 10 possible classes, which uses softmax activation function. One regularization technique - a dropout with a rate of 50%, was employed after a dense fully connected layer (FC1), in order to improve the model´s fit
+
 
 LeNet architecture: INPUT => CONV 1=> ReLU => MAXPOOL 1=> CONV 2=> ReLU => MAXPOOL 2 => FC 1=> ReLU => FC 2
 
@@ -109,10 +110,21 @@ $ bash kill_cnn.sh
 
  ```
 
-
 I hope it worked!
+
+
+## Results
+
+The current CNN model achieved a weighted average accuracy of 44% for correctly classifying artists according to their paintings.
+
+Performance graph with training and validation curves reveals that the model was able to learn (training loss curve flattened out after a significant decrease at around 20th epoch). However, while the validation loss curve showed a decrease at the very beginning, it started growing after the 10th epoch and was fluctuating throughout. It ended up creating a huge gap between training and validation loss curves, which may indicate a poor generalizability and an overfit of the model. More data or different regularization methods might be needed to improve the accuracy.
+
+
 
 
 __References__
 
-https://www.analyticsvidhya.com/blog/2020/10/create-image-classification-model-python-keras/
+Brownlee, J. (2019, February 27). How to use Learning Curves to Diagnose Machine Learning Model Performance. Machine Learning Mastery https://machinelearningmastery.com/learning-curves-for-diagnosing-machine-learning-model-performance/
+
+Gautam, T. (2020, October 16). Create your Own Image Classification Model using Python and Keras. Analytics Vidhya https://www.analyticsvidhya.com/blog/2020/10/create-image-classification-model-python-keras/
+
