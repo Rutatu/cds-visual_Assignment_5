@@ -9,7 +9,7 @@
 
 ## About the script
 
-This script builds a deep learning model using convolutional neural networks which classify Impressionism paintings by their respective artists. It uses LeNet architecture for CNN. Why might we want to do this? Well, consider the scenario where we have found a new, never-before-seen painting which is claimed to be the artist Renoir. An accurate predictive model could be useful here for art historians and archivists!
+This assignment is Class Assignment 5. This script builds a deep learning model using convolutional neural networks which classify Impressionism paintings by their respective artists. It uses LeNet architecture for CNN. Why might we want to do this? Well, consider the scenario where we have found a new, never-before-seen painting which is claimed to be the artist Renoir. An accurate predictive model could be useful here for art historians and archivists!
 
 ## Methods
 The problem of the task relates to classifying art paintings. To address this problem, I have used LeNet architecture to build a CNN model using a neural network framework TensorFlow 2.4. LeNet architecture used in this assignment consists of 6 layers: two Convolutional Layers (CONV), two Max Pooling layers (MAXPOOL), two Fully Connected Layers (FC). It uses activation function ReLU except for the output or classification layer (FC 2) with 10 possible classes, which uses softmax activation function. One regularization technique - a dropout with a rate of 50%, was employed after a dense fully connected layer (FC1), in order to improve the model´s fit
@@ -34,7 +34,7 @@ Depiction of the full model´s architecture can be found in folder called ***'ou
 | src/cnn_artists.py | The script |
 | README.md | Description of the assignment and the instructions |
 | cnn_venv.sh | bash file for creating a virtual environmment  |
-| kill_cnn.sh | bash file for killing a virtual environment |
+| kill_cnn.sh | bash file for removing a virtual environment |
 | requirements.txt | list of python packages required to run the script |
 
 
@@ -68,11 +68,11 @@ __Code parameters__
 
 | Parameter | Description |
 | --- | --- |
-| train_data | Directory of training data |
-| val_data | Directory of validation data |
-| learning_rate | Learning rate. Default = 0.01 |
-| optimizer | Optimizer. Default = SGD |
-| epochs | Number of epochs. Default = 50 |
+| train_data  (trd) | Directory of training data |
+| val_data (vald) | Directory of validation data |
+| learning_rate (lr) | Learning rate. Default = 0.01 |
+| optimizer (opt) | Optimizer. Default = SGD |
+| epochs (ep) | Number of epochs. Default = 50 |
 
 
 __Steps__
@@ -107,6 +107,10 @@ $ python cnn-artists.py -trd data/Impressionist_Classifier_data/training -vald d
 
 #9 To remove the newly created virtual environment
 $ bash kill_cnn.sh
+
+#10 To find out possible optional arguments for the script
+$ python cnn-artists.py --help
+
 
  ```
 
