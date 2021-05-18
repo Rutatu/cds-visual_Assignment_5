@@ -70,7 +70,7 @@ __Code parameters__
 | --- | --- |
 | train_data  (trd) | Directory of training data |
 | val_data (vald) | Directory of validation data |
-| optimizer (opt) | Optimizer. Default = SGD |
+| optimizer (optim) | Optimizer. Choose betweeen SGD and Adam |
 | learning_rate (lr) | Learning rate. Default = 0.01 |
 | epochs (ep) | Number of epochs. Default = 50 |
 
@@ -100,10 +100,10 @@ Run the code:
 $ cd src
 
 #7 Run the code with default parameters
-$ python cnn-artists.py -trd data/Impressionist_Classifier_data/training -vald data/Impressionist_Classifier_data/validation
+$ python cnn-artists.py -trd data/Impressionist_Classifier_data/training -vald data/Impressionist_Classifier_data/validation -optim SGD
 
 #8 Run the code with self-chosen parameters
-$ python cnn-artists.py -trd data/Impressionist_Classifier_data/training -vald data/Impressionist_Classifier_data/validation -opt Adam -lr 0.002 -ep 100
+$ python cnn-artists.py -trd data/Impressionist_Classifier_data/training -vald data/Impressionist_Classifier_data/validation -optim Adam -lr 0.002 -ep 100
 
 #9 To remove the newly created virtual environment
 $ bash kill_cnn.sh
