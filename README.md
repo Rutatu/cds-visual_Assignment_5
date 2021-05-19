@@ -70,9 +70,9 @@ __Code parameters__
 | --- | --- |
 | train_data  (trd) | Directory of training data |
 | val_data (vald) | Directory of validation data |
-| optimizer (optim) | Optimizer. Choose betweeen SGD and Adam |
-| learning_rate (lr) | Learning rate. Default = 0.01 |
-| epochs (ep) | Number of epochs. Default = 50 |
+| optimizer (optim) | A method to update the weight parameters to minimize the loss function. Choose betweeen SGD and Adam |
+| learning_rate (lr) | The amount that the weights are updated during training. Default = 0.01 |
+| epochs (ep) | Defines how many times the learning algorithm will work through the entire training dataset. Default = 50 |
 
 
 __Steps__
@@ -119,7 +119,7 @@ I hope it worked!
 
 ## Results
 
-The current CNN model achieved a weighted average accuracy of 44% for correctly classifying artists according to their paintings.
+The current CNN model (optimizer=SGD, lr=0.01, epochs=50) achieved a weighted average accuracy of 44% for correctly classifying artists according to their paintings.
 
 Performance graph with training and validation curves reveals that the model was able to learn (training loss curve flattened out after a significant decrease at around 20th epoch). However, while the validation loss curve showed a decrease at the very beginning, it started growing after the 10th epoch and was fluctuating throughout. It ended up creating a huge gap between training and validation loss curves, which may indicate a poor generalizability and an overfit of the model. More data or different regularization methods might be needed to improve the accuracy.
 
