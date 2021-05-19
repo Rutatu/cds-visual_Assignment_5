@@ -1,6 +1,6 @@
 # cds-visual_Assignment_5
 
-***Assignment for visual analytics class at Aarhus University.***
+***Class assignment for visual analytics class at Aarhus University.***
 
 ***2021-04-13***
 
@@ -126,7 +126,7 @@ Performance graph with training and validation curves reveals that the model was
 
 
 
-__References__
+## References
 
 Brownlee, J. (2019, February 27). How to use Learning Curves to Diagnose Machine Learning Model Performance. Machine Learning Mastery https://machinelearningmastery.com/learning-curves-for-diagnosing-machine-learning-model-performance/
 
